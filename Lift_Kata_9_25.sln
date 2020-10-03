@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lift_Kata_9_25", "Lift_Kata_9_25\Lift_Kata_9_25.csproj", "{2EC8EC19-9B96-4F05-8DA4-ABBC333ED1B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiftKata.Tests", "LiftKata.Tests\LiftKata.Tests.csproj", "{DD83D331-212F-4349-8008-86F09E87EF18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EC8EC19-9B96-4F05-8DA4-ABBC333ED1B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC8EC19-9B96-4F05-8DA4-ABBC333ED1B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC8EC19-9B96-4F05-8DA4-ABBC333ED1B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC8EC19-9B96-4F05-8DA4-ABBC333ED1B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD83D331-212F-4349-8008-86F09E87EF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD83D331-212F-4349-8008-86F09E87EF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD83D331-212F-4349-8008-86F09E87EF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD83D331-212F-4349-8008-86F09E87EF18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FE7245D-8F5E-42E7-8FC3-E7264C936431}
+	EndGlobalSection
+EndGlobal
