@@ -7,22 +7,24 @@ namespace LiftKata.Tests
 {
   public class DispatchSystemTests
   {
-    [Fact]
-    public void DispatchSystemCreatedWithDefaultSingleLift()
-    {
-      DispatchSystem disp = new DispatchSystem();
+    private DispatchSystem sut;
 
-      Assert.Single(disp.Lifts);
+    public DispatchSystemTests()
+    {
+      sut = new DispatchSystem();
     }
+
+    [Fact]
+    public void DispatchSystemCreatedWithDefaultSingleLift() =>  Assert.Single(sut.Lifts);
+    
 
     [Fact]
     public void DispatchCreatesAndSendsRequestToDefaultLift()
     {
-      DispatchSystem disp = new DispatchSystem();
 
       LiftCall lr = new LiftCall(LiftDirection.Down, 12);
 
-      Lift lift = disp.FindAvailableLiftForCall(lr);
+      Lift lift = sut.FindAvailableLiftForCall(lr);
 
       Assert.Equal(1, lift.ID);
 

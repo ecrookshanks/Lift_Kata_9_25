@@ -16,20 +16,12 @@ namespace LiftKata
 
     public event EventHandler<UserButtonPressEventArgs> UserButtonPressed;
 
-    protected virtual void OnUserButtonPressed(UserButtonPressEventArgs e)
-    {
-      UserButtonPressed?.Invoke(this, e);
-    }
+    protected virtual void OnUserButtonPressed(UserButtonPressEventArgs e) => UserButtonPressed?.Invoke(this, e);
 
-    public Lift(int id)
-    {
-      ID = id;
-    }
 
-    public Lift()
-    {
-      ID = 0;
-    }
+    public Lift(int id) => ID = id;
+
+    public Lift() => ID = 0;
 
 
     public void UserSelectsDestination(int floor)
@@ -64,14 +56,9 @@ namespace LiftKata
       int curFloor = this.CurrentFloor;
 
       int floorDelta = reqFloor - curFloor;
-      if ( floorDelta > 0)
-      {
-        this.CurrentDirection = LiftDirection.Up;
-      }
-      else
-      {
-        this.CurrentDirection = LiftDirection.Down;
-      }
+
+      this.CurrentDirection = floorDelta > 0 ? LiftDirection.Up : LiftDirection.Down;
+
     }
   }
 
